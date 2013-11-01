@@ -1,4 +1,4 @@
-# Generator express
+# Generator express-mysql
 An Expressjs-mysql generator for Yeoman, based on the express command line tool.
 
 ## Getting started
