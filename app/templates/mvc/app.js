@@ -1,12 +1,13 @@
 var express = require('express'),
-  mongoose = require('mongoose'),
+  orm = require('orm'),
   fs = require('fs'),
   config = require('./config/config');
 
-mongoose.connect(config.db);
-var db = mongoose.connection;
-db.on('error', function () {
-  throw new Error('unable to connect to database at ' + config.db);
+orm.db = orm.connect(config.db, function(err, db){
+  if(err){
+    console.log("Something is wrong with the connection", err);
+    return ;
+  }
 });
 
 var modelsPath = __dirname + '/app/models';

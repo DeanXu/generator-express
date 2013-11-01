@@ -9,7 +9,7 @@ var config = {
       name: '<%= _.slugify(appname) %>'
     },
     port: 3000,
-    db: 'mongodb://localhost/<%= _.slugify(appname) %>-development'
+    db: 'mysql://localhost/<%= _.slugify(appname) %>-development'
   },
 
   test: {
@@ -18,7 +18,7 @@ var config = {
       name: '<%= _.slugify(appname) %>'
     },
     port: 3000,
-    db: 'mongodb://localhost/<%= _.slugify(appname) %>-test'
+    db: 'mysql://localhost/<%= _.slugify(appname) %>-test'
   },
 
   production: {
@@ -27,7 +27,7 @@ var config = {
       name: '<%= _.slugify(appname) %>'
     },
     port: 3000,
-    db: 'mongodb://localhost/<%= _.slugify(appname) %>-production'
+    db: 'mysql://localhost/<%= _.slugify(appname) %>-production'
   }
 };
 

@@ -1,5 +1,5 @@
-var mongoose = require('mongoose'),
-  Article = mongoose.model('Article');
+var db = require('orm').db,
+  Article = db.models.article;
 
 exports.index = function(req, res){
   Article.find(function(err, articles){

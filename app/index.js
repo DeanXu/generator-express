@@ -27,7 +27,7 @@ ExpressGenerator.prototype.promptType = function promptType() {
     name: 'type',
     message: 'Select a version to install:',
     choices: [
-      'Basic',
+      'Basic(only express)',
       'MVC'
     ]
   }];
