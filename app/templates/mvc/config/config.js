@@ -6,10 +6,10 @@ var config = {
   development: {
     root: rootPath,
     app: {
-      name: '<%= _.slugify(appname) %>'
+      name: '<%= _.underscored(_.slugify(appname)) %>'
     },
     port: 3000,
-    db: 'mysql://localhost/<%= _.slugify(appname) %>-development'
+    db: 'mysql://root@localhost/<%= _.underscored(_.slugify(appname)) %>_development'
   },
 
   test: {
@@ -18,7 +18,7 @@ var config = {
       name: '<%= _.slugify(appname) %>'
     },
     port: 3000,
-    db: 'mysql://localhost/<%= _.slugify(appname) %>-test'
+    db: 'mysql://root@localhost/<%= _.underscored(_.slugify(appname)) %>_test'
   },
 
   production: {
@@ -27,7 +27,7 @@ var config = {
       name: '<%= _.slugify(appname) %>'
     },
     port: 3000,
-    db: 'mysql://localhost/<%= _.slugify(appname) %>-production'
+    db: 'mysql://root@localhost/<%= _.underscored(_.slugify(appname)) %>_production'
   }
 };
 
