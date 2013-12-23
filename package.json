@@ -1,6 +1,6 @@
 {
   "name": "generator-express-mysql",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A nodejs express-mysql generator for Yeoman",
   "keywords": [
     "yeoman-generator",
@@ -15,6 +15,12 @@
     "email": "xdx158@gmail.com",
     "url": "https://github.com/DeanXu"
   },
+  "contributors": [ 
+    {
+      "name": "Drew Lustro",
+      "email": "drewlustro@gmail.com"
+    } 
+  ],
   "main": "app/index.js",
   "repository": {
     "type": "git",
