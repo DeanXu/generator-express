@@ -45,13 +45,21 @@ ExpressGenerator.prototype.buildEnv = function buildEnv() {
   var name = this.options.mvc ? 'mvc' : 'basic';
   this.sourceRoot(path.join(__dirname, 'templates', name));
   this.directory('.', '.');
+
+
 };
 
 ExpressGenerator.prototype.assetsDirs = function assetsDirs() {
   this.mkdir('public/components');
   this.mkdir('public/js');
-  this.mkdir('public/css');
-  this.mkdir('public/img');
+  this.mkdir('public/styles');
+  this.mkdir('public/images');
+
+  // this.sourceRoot(path.join(__dirname, 'templates', 'common'));
+  
+  // this.copy('public/styles/style.css', 'public/styles/style.css');
+  // this.copy('public/images/favicon.ico', 'public/images/favicon.ico')
 };
+
 
 module.exports = ExpressGenerator;
