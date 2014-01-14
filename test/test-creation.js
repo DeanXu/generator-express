@@ -12,7 +12,7 @@ describe('express generator', function () {
         return done(err);
       }
 
-      this.app = helpers.createGenerator('express:app', [
+      this.app = helpers.createGenerator('express-mysql:app', [
         '../../app'
       ]);
       done();
@@ -27,10 +27,12 @@ describe('express generator', function () {
       '.gitignore',
       'bower.json',
       'app.js',
-      'public/img',
+      'public/images',
+      'public/images/favicon.ico',
       'public/components',
       'public/js',
-      'public/css/style.css',
+      'public/styles',
+      'public/styles/style.css',
       'package.json',
       'routes/index.js',
       'routes/user.js',
@@ -53,7 +55,7 @@ describe('express MVC generator', function () {
         return done(err);
       }
 
-      this.app = helpers.createGenerator('express:app', [
+      this.app = helpers.createGenerator('express-mysql:app', [
         '../../app'
       ]);
 
@@ -69,10 +71,12 @@ describe('express MVC generator', function () {
       '.gitignore',
       'bower.json',
       'app.js',
-      'public/img',
+      'public/images',
+      'public/images/favicon.ico',
+      'public/styles',
+      'public/styles/style.css',
       'public/components',
       'public/js',
-      'public/css',
       'package.json',
       'config/config.js',
       'config/express.js',

@@ -50,8 +50,9 @@ ExpressGenerator.prototype.buildEnv = function buildEnv() {
 ExpressGenerator.prototype.assetsDirs = function assetsDirs() {
   this.mkdir('public/components');
   this.mkdir('public/js');
-  this.mkdir('public/css');
-  this.mkdir('public/img');
+  this.mkdir('public/styles');
+  this.mkdir('public/images');
 };
+
 
 module.exports = ExpressGenerator;
